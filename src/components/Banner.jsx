@@ -11,7 +11,7 @@ const Banner = () => {
         <h2 className="text-lg md:text-xl font-semibold">
           ✨ Discover Your Dream Property with Estatein
         </h2>
-        <a href="#" className="underline  text-sm md:text-base text-purple-300 hover:text-purple-400">
+        <a href="*" className="underline  text-sm md:text-base text-purple-300 hover:text-purple-400">
           Learn more
         </a>
       </div>

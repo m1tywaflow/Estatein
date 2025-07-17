@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import boxes from "/src/assets/boxes.jpg"
+import boxes from "/src/assets/boxes.jpg";
 import CircleButton from "../CircleButton";
 const Counter = ({ target, suffix = "+", prefix = "", duration = 2000 }) => {
   const ref = useRef();

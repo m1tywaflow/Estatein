@@ -73,7 +73,7 @@
 
 // export default EstateinExperience;
 import React from "react";
-import "./estatein.css"; // подключаем кастомные стили
+import "./estatein.css"; 
 
 const steps = [
   {

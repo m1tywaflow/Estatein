@@ -6,7 +6,7 @@ export default function CTAsec() {
       className="relative w-full h-46 bg-center bg-cover text-white bg-black px-20"
       style={{ backgroundImage: `url(${bg})` }}
     >
-      <div className="flex justify-between px-30">
+      <div className="flex justify-between px-30 ">
         <di className="max-w-5xl">
           <h1 className="text-4xl pt-8">Start Your Real Estate Journey Today</h1>
           <p className="pt-4 text-[#999999]">

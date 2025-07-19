@@ -4,6 +4,10 @@ import OurJourney from "../components/About/OurJourney";
 import OurValues from "../components/About/OurValues";
 import OurAchiev from "../components/About/OurAchievements";
 import EstateinExperience from "../components/About/EstateinExperience";
+import EstateinTeam from "../components/About/EstateinTeam";
+import ValuedClients from "../components/About/ValuedClients";
+import CTAsec from "/src/components/Home/CTAsec";
+import { Cat } from "lucide-react";
 
 const AboutUs = () => {
   return (
@@ -11,7 +15,10 @@ const AboutUs = () => {
       <OurJourney />
       <OurValues />
       <OurAchiev />
-      <EstateinExperience/>
+      <EstateinExperience />
+      <EstateinTeam />
+      <ValuedClients />
+      <CTAsec />
     </div>
   );
 };

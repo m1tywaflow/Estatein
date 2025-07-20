@@ -6,6 +6,11 @@ import HomePage from "./pages/HomePage";
 import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer";
 import AboutUs from "./pages/AboutUsPage";
+import PropertiesPage from "./pages/PropertiesPage";
+import PropertyDetails from "./components/Properties/PropertyDetails";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 function App() {
   return (
@@ -15,6 +20,9 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/properties" element={<PropertiesPage />} />
+        <Route path="/property/:id" element={<PropertyDetails />} />
+
       </Routes>
       <Footer/>
     </Router>

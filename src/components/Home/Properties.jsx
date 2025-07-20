@@ -2,11 +2,13 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+ import { Link } from "react-router-dom";
 import firstHouse from "/src/assets/firstVilla.png";
 import secondHouse from "/src/assets/haven.png";
 import thirdHouse from "/src/assets/cottage.png";
 import fourthHouse from "/src/assets/villa.png";
+import fifthHouse from "/src/assets/fontespina1.jpg";
+import sixthHouse from "/src/assets/villas/1_View00.png";
 
 const properties = [
   {
@@ -48,6 +50,26 @@ const properties = [
     baths: 7,
     type: "Villa",
     price: "$760,000",
+  },
+  {
+    image: fifthHouse,
+    title: "FONTESPINA 6",
+    description:
+      "Fontespina,stands on the hill overlooking the Riviera delle Palme of San Benedetto del Tronto.",
+    beds: 3,
+    baths: 3,
+    type: "Villa",
+    price: "$220,000",
+  },
+  {
+    image: sixthHouse,
+    title: "Laguna Apartments",
+    description:
+      "Good location, close to shops and restaurants, good view, 4 minutes to the beach.",
+    beds: 1,
+    baths: 1,
+    type: "Apartments",
+    price: "$210,000",
   },
 ];
 
@@ -128,9 +150,12 @@ export default function Properties() {
                       <p className="text-gray-400 text-sm">Price</p>
                       <p className="font-semibold text-white">{prop.price}</p>
                     </div>
-                    <button className="bg-[#703BF7] hover:bg-purple-700 text-white text-sm px-4 py-2 rounded-xl cursor-pointer">
+                    <Link
+                      to="/properties"
+                      className="bg-[#703BF7] hover:bg-purple-700 text-white text-sm px-4 py-2 rounded-xl cursor-pointer"
+                    >
                       View Property Details
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>

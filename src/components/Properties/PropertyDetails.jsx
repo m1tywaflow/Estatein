@@ -6,6 +6,10 @@ import { LiaBedSolid } from "react-icons/lia";
 import { MdOutlinePriceCheck } from "react-icons/md";
 import Modal from "react-modal";
 import AmenitiesList from "./AmenitiesList";
+import InquiryForm from "./InquiryForm";
+import PricingDetails from "./PricingDetails";
+import AskedSec from "../Home/AskedSec";
+import CTAsec from "../Home/CTAsec";
 
 Modal.setAppElement("#root");
 
@@ -112,8 +116,8 @@ const PropertyDetails = () => {
             </button>
           </div>
         </div>
-        <div className="flex gap-20">
-          <div className="bg-[#262626] text-white rounded-xl p-6 max-w-xl shadow-lg">
+        <div className="flex gap-20 pt-20 h-114 ">
+          <div className="bg-black  border-1 text-white rounded-xl p-6 max-w-xl shadow-lg">
             <h2 className="text-lg font-semibold mb-2">Description</h2>
             <p className="mb-8 text-gray-300">{property.fullDescription}</p>
             <div className="border-t border-zinc-700 pt-4 flex text-sm text-zinc-400">
@@ -168,6 +172,10 @@ const PropertyDetails = () => {
           />
         </div>
       </Modal>
+      <InquiryForm />
+      <PricingDetails />
+      <AskedSec />
+      <CTAsec />
     </div>
   );
 };

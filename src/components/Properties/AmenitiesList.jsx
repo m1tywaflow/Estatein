@@ -11,7 +11,7 @@ const features = [
 
 const AmenitiesList = () => {
   return (
-    <div className="bg-zinc-950 text-white p-6 rounded-xl">
+    <div className="bg-zinc-950 text-white p-6 rounded-xl border-1 h-94">
       <h2 className="text-xl font-semibold mb-6">
         Key Features and Amenities
       </h2>

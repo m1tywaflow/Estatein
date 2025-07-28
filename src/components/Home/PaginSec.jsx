@@ -13,7 +13,7 @@ const features = [
 const PaginSec = () => {
   return (
     <div className="bg-[#0a0a0a] py-10 px-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-[1600px] mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-8 mx-auto">
         {features.map((feature, index) => (
           <div
             key={index}
@@ -27,7 +27,7 @@ const PaginSec = () => {
               />
               <ArrowUpRight className="text-[#4D4D4D]" size={30} />
             </div>
-            <p>{feature.title}</p>
+            <p className="text-[#999999]">{feature.title}</p>
           </div>
         ))}
       </div>

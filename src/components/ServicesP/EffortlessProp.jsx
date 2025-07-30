@@ -5,6 +5,11 @@ import second from "/src/assets/maintenance.png";
 import third from "/src/assets/financial.png";
 import fourth from "/src/assets/legal.png";
 import cardBanner from "/src/assets/cardBanner.png";
+import marketIcon from "/src/assets/market.png";
+import roiIcon from "/src/assets/roi.png";
+import lightIcon from "/src/assets/light.png";
+import sunIcon from "/src/assets/legal.png";
+import CTAsec from "../Home/CTAsec";
 
 const cards = [
   {
@@ -26,6 +31,29 @@ const cards = [
     title: "Legal Guardian",
     text: "Stay compliant with property laws and regulations effortlessly.",
     icon: fourth,
+  },
+];
+
+const effoCards = [
+  {
+    title: "Market Insight",
+    text: "Stay ahead of market trends with our expert Market Analysis. We provide in-depth insights into real estate market conditions",
+    icon: marketIcon,
+  },
+  {
+    title: "ROI Assessment",
+    text: "Make investment decisions with confidence. Our ROI Assessment services evaluate the potential returns on your investments",
+    icon: roiIcon,
+  },
+  {
+    title: "Customized Strategies",
+    text: "Every investor is unique, and so are their goals. We develop Customized Investment Strategies tailored to your specific needs",
+    icon: lightIcon,
+  },
+  {
+    title: "Diversification Mastery",
+    text: "Diversify your real estate portfolio effectively. Our experts guide you in spreading your investments across various property types and locations",
+    icon: sunIcon,
   },
 ];
 
@@ -52,11 +80,16 @@ export default function EffortlessProp() {
             className="bg-[#111] text-white p-6 rounded-md border border-[#222] relative hover:border-purple-500 transition cursor-pointer"
           >
             <div>
-              <img
-                src={cards.icon}
-                alt={cards.title}
-                className="w-14 h-14 object-contain pb-2"
-              />
+              <div className="flex items-center gap-2">
+                <img
+                  src={cards.icon}
+                  alt={cards.title}
+                  className="w-14 h-14 object-contain pb-2"
+                />
+                <h3 className="text-lg font-semibold text-white mb-2">
+                  {cards.title}
+                </h3>
+              </div>
               <p className="text-[#999999]">{cards.text}</p>
             </div>
           </div>
@@ -85,6 +118,73 @@ export default function EffortlessProp() {
           </Link>
         </div>
       </div>
+      <div className="bg-black text-white px-6 lg:px-20 py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-8 items-stretch">
+          {/* Левый инвестиционный блок */}
+          <div className="flex flex-col h-full rounded-md overflow-hidden shadow-lg border border-[#222]">
+            {/* Верх */}
+            <div className="bg-gray-100 px-6 py-8 text-black flex-grow">
+              <h2 className="text-3xl font-bold leading-snug">
+                Smart Investments,
+                <br />
+                Informed Decisions
+              </h2>
+              <p className="text-sm text-gray-500 mt-4">
+                Building a real estate portfolio requires a strategic approach.
+                Estatein's Investment Advisory Service empowers you to make
+                smart investments and informed decisions.
+              </p>
+            </div>
+
+            {/* Низ с фоном */}
+            <div
+              className="relative px-6 py-8"
+              style={{
+                backgroundImage: `url(${cardBanner})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="relative z-10">
+                <h3 className="text-xl font-semibold mb-2">
+                  Unlock Your Investment Potential
+                </h3>
+                <p className="text-sm text-gray-300 mb-6">
+                  Explore our Property Management Service categories and let us
+                  handle the complexities while you enjoy the benefits of
+                  property ownership.
+                </p>
+                <Link to="/properties">
+                  <button className="w-full bg-transparent border border-purple-950 text-white py-2 rounded hover:bg-purple-950 transition cursor-pointer">
+                    Learn More
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Правая часть: карточки */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {effoCards.map((card, index) => (
+              <div
+                key={index}
+                className="bg-[#111] p-6 rounded-md border border-[#222] hover:border-purple-500 transition cursor-pointer h-full flex flex-col justify-between"
+              >
+                <div className="flex items-start gap-8 ">
+                  <img
+                    src={card.icon}
+                    alt={card.title}
+                    className="w-20 h-20 object-contain"
+                  />
+                  <h3 className="text-xl font-semibold mt-5">{card.title}</h3>
+                </div>
+                <p className="text-[#999999] text-sm">{card.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <CTAsec />
     </div>
   );
 }

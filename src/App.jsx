@@ -9,6 +9,9 @@ import AboutUs from "./pages/AboutUsPage";
 import PropertiesPage from "./pages/PropertiesPage";
 import PropertyDetails from "./components/Properties/PropertyDetails";
 import ServicesPage from "./pages/ServicesPage";
+import FAQPage from "./pages/FAQPage";
+import FeaturesPage from "./pages/FeaturesPage";
+import HowItWorksPage from "./pages/HowItWorksPage";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -23,6 +26,9 @@ function App() {
         <Route path="/properties" element={<PropertiesPage />} />
         <Route path="/property/:id" element={<PropertyDetails />} />
         <Route path="/services" element={<ServicesPage />} />
+        <Route path="/faq" element={<FAQPage />} />
+        <Route path="/features" element={<FeaturesPage />} />
+        <Route path="/how-it-works" element={<HowItWorksPage />} />
       </Routes>
       <Footer />
     </Router>

@@ -50,11 +50,16 @@ export default function UnlockPropValue() {
             className="bg-[#111] text-white p-6 rounded-md border border-[#222] relative hover:border-purple-500 transition cursor-pointer"
           >
             <div>
-              <img
-                src={cards.icon}
-                alt={cards.title}
-                className="w-14 h-14 object-contain pb-2"
-              />
+              <div className="flex items-center gap-2">
+                <img
+                  src={cards.icon}
+                  alt={cards.title}
+                  className="w-14 h-14 object-contain pb-2"
+                />
+                <h3 className="text-lg font-semibold text-white mb-2">
+                  {cards.title}
+                </h3>
+              </div>
               <p className="text-[#999999]">{cards.text}</p>
             </div>
           </div>

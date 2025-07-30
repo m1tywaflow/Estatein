@@ -33,15 +33,7 @@ const Footer = () => {
             <li>
               <a
                 className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="*"
-              >
-                Hero Section
-              </a>
-            </li>
-            <li>
-              <a
-                className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="*"
+                href="/features"
               >
                 Features
               </a>
@@ -49,7 +41,7 @@ const Footer = () => {
             <li>
               <a
                 className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="*"
+                href="/properties"
               >
                 Properties
               </a>
@@ -57,15 +49,7 @@ const Footer = () => {
             <li>
               <a
                 className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="*"
-              >
-                Testimonials
-              </a>
-            </li>
-            <li>
-              <a
-                className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="*"
+                href="/faq"
               >
                 FAQ's
               </a>
@@ -86,33 +70,9 @@ const Footer = () => {
             <li>
               <a
                 className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="*"
-              >
-                Our Works
-              </a>
-            </li>
-            <li>
-              <a
-                className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="*"
+                href="/how-it-works"
               >
                 How It Works
-              </a>
-            </li>
-            <li>
-              <a
-                className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="*"
-              >
-                Our Team
-              </a>
-            </li>
-            <li>
-              <a
-                className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="*"
-              >
-                Our Clients
               </a>
             </li>
           </ul>

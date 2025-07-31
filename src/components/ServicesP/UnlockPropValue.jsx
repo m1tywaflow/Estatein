@@ -81,7 +81,7 @@ export default function UnlockPropValue() {
             best deal possible for your valuable asset.
           </p>
           <Link
-            to="/properties"
+            to="/valuation-mastery"
             className="bg-white text-black px-5 py-2 rounded-md font-medium hover:bg-purple-950 transition cursor-pointer"
           >
             Learn More

@@ -111,7 +111,7 @@ export default function EffortlessProp() {
             complexities while you enjoy the benefits of property ownership.
           </p>
           <Link
-            to="/properties"
+            to="/property-management"
             className="bg-white text-black px-5 py-2 rounded-md font-medium hover:bg-purple-950 transition cursor-pointer"
           >
             Learn More
@@ -120,9 +120,7 @@ export default function EffortlessProp() {
       </div>
       <div className="bg-black text-white px-6 lg:px-20 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-8 items-stretch">
-          {/* Левый инвестиционный блок */}
           <div className="flex flex-col h-full rounded-md overflow-hidden shadow-lg border border-[#222]">
-            {/* Верх */}
             <div className="bg-gray-100 px-6 py-8 text-black flex-grow">
               <h2 className="text-3xl font-bold leading-snug">
                 Smart Investments,
@@ -135,8 +133,6 @@ export default function EffortlessProp() {
                 smart investments and informed decisions.
               </p>
             </div>
-
-            {/* Низ с фоном */}
             <div
               className="relative px-6 py-8"
               style={{
@@ -154,7 +150,7 @@ export default function EffortlessProp() {
                   handle the complexities while you enjoy the benefits of
                   property ownership.
                 </p>
-                <Link to="/properties">
+                <Link to="/valuation-mastery">
                   <button className="w-full bg-transparent border border-purple-950 text-white py-2 rounded hover:bg-purple-950 transition cursor-pointer">
                     Learn More
                   </button>
@@ -162,8 +158,6 @@ export default function EffortlessProp() {
               </div>
             </div>
           </div>
-
-          {/* Правая часть: карточки */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {effoCards.map((card, index) => (
               <div

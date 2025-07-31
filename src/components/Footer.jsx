@@ -54,6 +54,14 @@ const Footer = () => {
                 FAQ's
               </a>
             </li>
+            <li>
+              <a
+                className="cursor-pointer hover:text-pink-300 duration-200 transition"
+                href="/privacy-policy"
+              >
+                Privacy Policy
+              </a>
+            </li>
           </ul>
         </div>
         <div>
@@ -62,7 +70,7 @@ const Footer = () => {
             <li>
               <a
                 className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="*"
+                href="/our-story"
               >
                 Our Story
               </a>
@@ -104,7 +112,7 @@ const Footer = () => {
             <li>
               <a
                 className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="*"
+                href="/valuation-mastery"
               >
                 Valuation Mastery
               </a>
@@ -112,32 +120,8 @@ const Footer = () => {
             <li>
               <a
                 className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="*"
-              >
-                Strategic Marketing
-              </a>
-            </li>
-            <li>
-              <a
-                className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="*"
-              >
-                Negotiation Wizardry
-              </a>
-            </li>
-            <li>
-              <a
-                className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="*"
-              >
-                Closing Success
-              </a>
-            </li>
-            <li>
-              <a
-                className="cursor-pointer hover:text-pink-300 duration-200 transition"
                 c
-                href="*"
+                href="/property-management"
               >
                 Property Management
               </a>
@@ -153,14 +137,6 @@ const Footer = () => {
                 href="*"
               >
                 Contact Form
-              </a>
-            </li>
-            <li>
-              <a
-                className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="*"
-              >
-                Our Offices
               </a>
             </li>
           </ul>

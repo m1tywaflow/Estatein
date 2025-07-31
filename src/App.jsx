@@ -12,6 +12,10 @@ import ServicesPage from "./pages/ServicesPage";
 import FAQPage from "./pages/FAQPage";
 import FeaturesPage from "./pages/FeaturesPage";
 import HowItWorksPage from "./pages/HowItWorksPage";
+import OurStory from "./pages/OurStoryPage";
+import ValuationMastery from "./pages/ValuationMastery";
+import PropertyManagement from "./pages/PropertyManagement";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -29,6 +33,10 @@ function App() {
         <Route path="/faq" element={<FAQPage />} />
         <Route path="/features" element={<FeaturesPage />} />
         <Route path="/how-it-works" element={<HowItWorksPage />} />
+        <Route path="/our-story" element={<OurStory />} />
+        <Route path="/valuation-mastery" element={<ValuationMastery />} />
+        <Route path="/property-management" element={<PropertyManagement />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
       </Routes>
       <Footer />
     </Router>

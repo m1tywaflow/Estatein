@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
- import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import firstHouse from "/src/assets/firstVilla.png";
 import secondHouse from "/src/assets/haven.png";
 import thirdHouse from "/src/assets/cottage.png";
@@ -110,9 +110,11 @@ export default function Properties() {
               information.
             </p>
           </div>
-          <button className="border border-gray-600 text-sm px-4 py-2 rounded hover:bg-white hover:text-black transition cursor-pointer">
-            View All Properties
-          </button>
+          <Link to="/properties">
+            <button className="border border-gray-600 text-sm px-4 py-2 rounded hover:bg-white hover:text-black transition cursor-pointer">
+              View All Properties
+            </button>
+          </Link>
         </div>
 
         <Slider {...settings}>

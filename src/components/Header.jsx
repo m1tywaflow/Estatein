@@ -38,7 +38,7 @@ const Header = () => {
           </nav>
         </div>
         <Link
-          to="/contact"
+          to="/contact-us"
           className="text-white border border-gray-600 px-4 py-1.5 rounded-md hover:border-purple-500 transition cursor-pointer"
         >
           Contact Us

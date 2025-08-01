@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import boxes from "/src/assets/boxes.jpg";
 import CircleButton from "../CircleButton";
+import { Link } from "react-router-dom";
 const Counter = ({ target, suffix = "+", prefix = "", duration = 2000 }) => {
   const ref = useRef();
 
@@ -51,12 +52,16 @@ const Discover = () => {
           </p>
         </div>
         <div className=" flex gap-10 pt-10">
-          <button className="bg-[#262626] w-30 h-12 rounded-xl cursor-pointer hover:bg-[#703BF7] transition duration-200">
-            Lear More
-          </button>
-          <button className="bg-[#262626] w-40 h-12 rounded-xl cursor-pointer hover:bg-[#703BF7] transition duration-200">
-            Browse Properties
-          </button>
+          <Link to="/how-it-works">
+            <button className="bg-[#262626] w-30 h-12 rounded-xl cursor-pointer hover:bg-[#703BF7] transition duration-200">
+              Learn More
+            </button>
+          </Link>
+          <Link to="/properties">
+            <button className="bg-[#262626] w-40 h-12 rounded-xl cursor-pointer hover:bg-[#703BF7] transition duration-200">
+              Browse Properties
+            </button>
+          </Link>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12">
           <div className="bg-[#1A1A1A] p-6 rounded-xl text-center">

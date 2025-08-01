@@ -16,6 +16,7 @@ import OurStory from "./pages/OurStoryPage";
 import ValuationMastery from "./pages/ValuationMastery";
 import PropertyManagement from "./pages/PropertyManagement";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage"
+import ContactUs from "./pages/ContactUsPage";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -37,6 +38,7 @@ function App() {
         <Route path="/valuation-mastery" element={<ValuationMastery />} />
         <Route path="/property-management" element={<PropertyManagement />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+         <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
       <Footer />
     </Router>

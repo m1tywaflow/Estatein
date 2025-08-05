@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "./Logo";
+import { Link } from "react-router-dom";
 import { Send } from "lucide-react";
 import { MailPlus } from "lucide-react";
 import { Facebook } from "lucide-react";
@@ -31,36 +32,36 @@ const Footer = () => {
           <h1 className="font-semibold mb-2 text-[#999999]">Home</h1>
           <ul className="space-y-1 text-sm text-gray-300">
             <li>
-              <a
+              <Link
+                to="/features"
                 className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="/features"
               >
                 Features
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
+                to="/properties"
                 className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="/properties"
               >
                 Properties
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
+                to="/faq"
                 className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="/faq"
               >
                 FAQ's
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
+                to="/privacy-policy"
                 className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="/privacy-policy"
               >
                 Privacy Policy
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -68,20 +69,20 @@ const Footer = () => {
           <h1 className="font-semibold mb-2 text-[#999999]">About Us</h1>
           <ul className="space-y-1 text-sm text-gray-300">
             <li>
-              <a
+              <Link
+                to="/our-story"
                 className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="/our-story"
               >
                 Our Story
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
+                to="/how-it-works"
                 className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="/how-it-works"
               >
                 How It Works
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -89,20 +90,20 @@ const Footer = () => {
           <h1 className="font-semibold mb-2 text-[#999999]">Properties</h1>
           <ul className="space-y-1 text-sm text-gray-300">
             <li>
-              <a
+              <Link
+                to="*"
                 className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="*"
               >
                 Portfolio
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
+                to="*"
                 className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="*"
               >
                 Categories
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -110,21 +111,21 @@ const Footer = () => {
           <h1 className="font-semibold mb-2 text-[#999999]">Services</h1>
           <ul className="space-y-1 text-sm text-gray-300">
             <li>
-              <a
+              <Link
+                to="/valuation-mastery"
                 className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="/valuation-mastery"
               >
                 Valuation Mastery
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
+                to="/property-management"
                 className="cursor-pointer hover:text-pink-300 duration-200 transition"
                 c
-                href="/property-management"
               >
                 Property Management
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -132,12 +133,12 @@ const Footer = () => {
           <h1 className="font-semibold mb-2 text-[#999999]">Contact Us</h1>
           <ul className="space-y-1 text-sm text-gray-300">
             <li>
-              <a
+              <Link
+                to="*"
                 className="cursor-pointer hover:text-pink-300 duration-200 transition"
-                href="*"
               >
                 Contact Form
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

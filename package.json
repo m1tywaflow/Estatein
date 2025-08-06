@@ -15,6 +15,7 @@
     "@nivo/bump": "^0.99.0",
     "@nivo/core": "^0.99.0",
     "@nivo/line": "^0.99.0",
+    "@studio-freight/lenis": "^1.0.42",
     "@tailwindcss/vite": "^4.1.11",
     "axios": "^1.10.0",
     "framer-motion": "^12.23.6",

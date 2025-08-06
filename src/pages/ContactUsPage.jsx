@@ -1,12 +1,14 @@
 import React from "react";
 import ContactBanner from "/src/components/ContactUs/ContactBanner";
 import ConnectSec from "../components/ContactUs/ConnectSec";
+import DiscOfficeLoc from "../components/ContactUs/DiscOfficeLoc";
 
 const ContactUs = () => {
   return (
     <div>
       <ContactBanner />
-      <ConnectSec/>
+      <ConnectSec />
+      <DiscOfficeLoc />
     </div>
   );
 };

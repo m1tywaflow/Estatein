@@ -1,11 +1,26 @@
 import React from "react";
-import {YupPreview} from "./YupPreview"
+import { YupPreview } from "./YupPreview";
+
 export default function ConnectSec() {
   return (
-    <div className="bg-black px-20 py-20">
-      <div className="pb-20">
-        <h1 className="text-4xl text-white">Let's Connect</h1>
-        <p className="text-[#999999] text-sm w-300 pt-4">
+    <div className="relative bg-black overflow-hidden px-6 md:px-20 py-20">
+      {/* pisma */}
+      <div className="absolute inset-0 pointer-events-none">
+        {/* left side */}
+        <EnvelopeIcon className="absolute top-4 left-4 w-16 h-16 text-white rotate-0" />
+        <EnvelopeIcon className="absolute top-28 left-12 w-24 h-24 text-white rotate-12" />
+        <EnvelopeIcon className="absolute top-56 left-2 w-20 h-20 text-white -rotate-6" />
+
+        {/* right side */}
+        <EnvelopeIcon className="absolute top-8 right-4 w-20 h-20 text-white rotate-12" />
+        <EnvelopeIcon className="absolute top-48 right-16 w-16 h-16 text-white rotate-8" />
+
+        {/* center+right */}
+        <EnvelopeIcon className="absolute bottom-200 right-24 w-20 h-20 text-white rotate-6" />
+      </div>
+      <div className="px-20 py-20 text-center relative z-10">
+        <h1 className="text-5xl text-white mb-4">Let's Connect</h1>
+        <p className="text-sm text-gray-400 max-w-5xl mx-auto pt-4">
           We're excited to connect with you and learn more about your real
           estate goals. Use the form below to get in touch with Estatein.
           Whether you're a prospective client, partner, or simply curious about
@@ -13,9 +28,34 @@ export default function ConnectSec() {
           assistance you need.
         </p>
       </div>
-      <div className=" border-gray-700 border-2 rounded-2xl p-6 md:p-10 shadow-lg">
-        <YupPreview />
+
+      {/* glow border gradik */}
+      <div className="relative group">
+        {/* obvodka gradik */}
+        <div
+          className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500 
+                     blur-md opacity-80 transition-all duration-500 group-hover:blur-lg group-hover:opacity-100"
+        ></div>
+
+        {/* main container7 */}
+        <div className="relative rounded-2xl p-6 md:p-10 bg-black border border-gray-800 z-10">
+          <YupPreview />
+        </div>
       </div>
     </div>
   );
 }
+
+// svg icon pisma
+const EnvelopeIcon = ({ className }) => (
+  <svg
+    className={className}
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    viewBox="0 0 24 24"
+  >
+    <rect x="2" y="4" width="20" height="16" rx="2" ry="2" />
+    <polyline points="2,4 12,13 22,4" />
+  </svg>
+);

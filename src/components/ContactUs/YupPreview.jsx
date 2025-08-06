@@ -134,7 +134,7 @@ export function YupPreview() {
       <div className="flex gap-2 flex-wrap">
         <button
           type="submit"
-          className="bg-purple-900 text-white px-4 py-2 rounded-xl flex items-center gap-2 hover:bg-pink-300"
+          className="bg-purple-900 text-white px-4 py-2 rounded-xl flex items-center gap-2 hover:bg-pink-300 transition duration-150 cursor-pointer"
         >
           <span>Send</span>
           <SendHorizontal className="w-5 h-5" />
@@ -142,7 +142,7 @@ export function YupPreview() {
 
         <button
           type="button"
-          className="text-white border border-white px-4 py-2 rounded-xl flex items-center gap-2 hover:bg-white hover:text-black transition disabled:opacity-50"
+          className="text-white border border-white px-4 py-2 rounded-xl flex items-center gap-2 hover:bg-white hover:text-black transition duration-150 cursor-pointer disabled:opacity-50"
           disabled={!isSubmitted}
           onClick={() => reset()}
         >

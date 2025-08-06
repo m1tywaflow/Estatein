@@ -23,7 +23,7 @@ export default function CTAsec() {
         </di>
         <Link
           to="/properties"
-          className="bg-purple-600 w-40 h-12 mt-20 rounded cursor-pointer hover:bg-[#703BF7] transition duration-200 text-center pt-3"
+          className="bg-[#703BF7] w-40 h-12 mt-20 rounded cursor-pointer hover:bg-pink-400 transition duration-200 text-center pt-3"
         >
           Explore Properties
         </Link>

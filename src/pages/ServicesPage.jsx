@@ -3,6 +3,7 @@ import ServicesBanner from "../components/ServicesP/ServicesBanner";
 import PaginSec from "../components/Home/PaginSec";
 import UnlockPropValue from "../components/ServicesP/UnlockPropValue";
 import EffortlessProp from "../components/ServicesP/EffortlessProp";
+import CTAsec from "/src/components/Home/CTAsec";
 const ServicesPage = () => {
   return (
     <div>
@@ -10,6 +11,7 @@ const ServicesPage = () => {
       <PaginSec />
       <UnlockPropValue />
       <EffortlessProp />
+      <CTAsec/>
     </div>
   );
 };

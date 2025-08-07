@@ -9,7 +9,6 @@ import marketIcon from "/src/assets/market.png";
 import roiIcon from "/src/assets/roi.png";
 import lightIcon from "/src/assets/light.png";
 import sunIcon from "/src/assets/legal.png";
-import CTAsec from "../Home/CTAsec";
 
 const cards = [
   {
@@ -178,7 +177,6 @@ export default function EffortlessProp() {
           </div>
         </div>
       </div>
-      <CTAsec />
     </div>
   );
 }

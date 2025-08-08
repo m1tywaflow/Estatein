@@ -35,7 +35,7 @@ const comments = [
     rating: "Helpful",
     main: "Stress-free Process!",
     detailed:
-      "We didn’t expect the process to be this smooth. Kudos to the Estatein team for their transparency and care!",
+      "We didn’t expect the process to be this smooth. Kudos to the Estatein team for their transparency and care!They truly care about your needs.",
     image: firstPerson,
     name: "Courtney Henry",
     country: "Australia, Sydney",
@@ -47,11 +47,11 @@ export default function Comments() {
   const [fade, setFade] = useState(true);
   useEffect(() => {
     const interval = setInterval(() => {
-      setFade(false); 
+      setFade(false);
 
       setTimeout(() => {
         setStartIndex((prevIndex) => (prevIndex + 3) % comments.length);
-        setFade(true); 
+        setFade(true);
       }, 300);
     }, 4000);
 

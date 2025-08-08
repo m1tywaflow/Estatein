@@ -1,1 +1,25 @@
 @import "tailwindcss";
+/* === Убираем белый фон автозаполнения в Chrome/Safari/Edge === */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #111 inset; /* фон как у твоих инпутов */
+  -webkit-text-fill-color: #fff; /* цвет текста */
+  caret-color: #fff; /* цвет курсора */
+}
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #111 inset;
+  -webkit-text-fill-color: #fff;
+}
+
+/* === Убираем стрелочки у input type="number" === */
+/* Chrome, Safari, Edge */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

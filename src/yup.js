@@ -1,24 +1,79 @@
+// import * as yup from 'yup';
+// import { yupResolver } from '@hookform/resolvers/yup';
+
+// export const validationSchema = yup.object({
+//   username: yup.string().required('Username is required'),
+//   age: yup
+//     .number()
+//     .required('Age is required')
+//     .positive('Age must be positive')
+//     .integer('Age must be an integer'),
+//   email: yup.string().email('Invalid email').required('Email is required'),
+//   phone: yup.string().required('Phone is required'),
+//   select: yup.string().required('Select an option'),
+//   password: yup.string().required('Password is required').min(6, 'Minimum 6 characters'),
+//   confirmPassword: yup
+//     .string()
+//     .oneOf([yup.ref('password')], 'Passwords must match')
+//     .required('Confirm password is required'),
+//   radioType: yup.string().required('Select a type'),
+//   rememberMe: yup.boolean().oneOf([true], 'You must accept to continue'),
+// });
+
+// export const formOptions = {
+//   resolver: yupResolver(validationSchema),
+//   mode: 'onTouched',
+// };
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 
-export const validationSchema = yup.object({
-  username: yup.string().required('Username is required'),
-  age: yup
-    .number()
-    .required('Age is required')
-    .positive('Age must be positive')
-    .integer('Age must be an integer'),
-  email: yup.string().email('Invalid email').required('Email is required'),
-  phone: yup.string().required('Phone is required'),
-  select: yup.string().required('Select an option'),
-  password: yup.string().required('Password is required').min(6, 'Minimum 6 characters'),
-  confirmPassword: yup
-    .string()
-    .oneOf([yup.ref('password')], 'Passwords must match')
-    .required('Confirm password is required'),
-  radioType: yup.string().required('Select a type'),
-  rememberMe: yup.boolean().oneOf([true], 'You must accept to continue'),
-});
+const phoneRegex = /(?=.*\+[0-9]{3}\s?[0-9]{2}\s?[0-9]{3}\s?[0-9]{4,5}$)/;
+
+export const validationSchema = yup
+  .object({
+    username: yup
+      .string()
+      .trim()
+      .required('Missing name'),
+    age: yup
+      .number()
+      .required('Missing age')
+      .positive('Age must be an positive number')
+      .integer('Age must be an integer')
+      .min(18, 'Your age must be minimum 18'),
+    email: yup
+      .string()
+      .trim()
+      .required('Missing email')
+      .email('Invalid email format'),
+    phone: yup
+      .string()
+      .trim()
+      .required('Missing phone')
+      .matches(phoneRegex, 'Phone number must be in correct format - +380 XX XXX XX XX'),
+    select: yup
+      .string()
+      .required('Select any option')
+      .oneOf(['option_1', 'option_2', 'option_3'], 'Select any option'),
+    password: yup
+      .string()
+      .trim()
+      .required('Missing password')
+      .min(4, 'Your password must be minimum 4'),
+    confirmPassword: yup
+      .string()
+      .trim()
+      .required('Missing confirm password')
+      .oneOf([yup.ref('password')], 'Passwords must match'),
+    radioType: yup
+      .string()
+      .required('Radio Type is required'),
+    rememberMe: yup
+      .boolean()
+      .required()
+      .oneOf([true], 'Remember me is required'),
+  })
+  .required();
 
 export const formOptions = {
   resolver: yupResolver(validationSchema),

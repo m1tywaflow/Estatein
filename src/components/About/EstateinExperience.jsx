@@ -1,5 +1,5 @@
 import React from "react";
-import "./estatein.css"; 
+import "./estatein.css";
 
 const steps = [
   {
@@ -54,10 +54,10 @@ const EstateinExperience = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
         {steps.map((item, index) => (
-          <div key={index} className="card-wrapper">
-            <div className="card-content">
+          <div key={index} className="card-wrapper h-full">
+            <div className="card-content relative h-full flex flex-col p-6 bg-[#1A1A1A] rounded-lg">
               <div className="absolute top-0 left-0 h-[2px] w-1/4 bg-gradient-to-r from-purple-500/80 to-transparent" />
               <p className="text-xs text-gray-400 mb-3">{item.step}</p>
               <h3 className="text-lg font-semibold mb-2">{item.title}</h3>

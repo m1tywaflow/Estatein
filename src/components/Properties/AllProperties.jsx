@@ -24,7 +24,9 @@ const AllProperties = () => {
               <h2 className="text-xl text-white font-semibold mb-2">
                 {property.title}
               </h2>
-              <p className="text-sm text-gray-400 mb-4">{property.description}</p>
+              <p className="text-sm text-gray-400 mb-4">
+                {property.description}
+              </p>
               <div className="text-gray-300 mb-2">
                 <span>{property.beds} Beds</span> •{" "}
                 <span>{property.baths} Baths</span>
@@ -34,7 +36,7 @@ const AllProperties = () => {
               </p>
               <Link
                 to={`/property/${property.id}`}
-                className="inline-block px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition"
+                className="inline-block px-4 py-2 bg-[#703BF7] text-white rounded-lg hover:bg-purple-700 transition"
               >
                 View Details
               </Link>

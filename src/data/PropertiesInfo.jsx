@@ -98,6 +98,36 @@ import fifthVilla9 from "/src/assets/villas/1_View09.png";
 import fifthVilla10 from "/src/assets/villas/1_View10.png";
 import fifthVilla11 from "/src/assets/villas/1_View11.png";
 
+import fontespina1 from "/src/assets/villas/fontespina1.jpg";
+import fontespina2 from "/src/assets/villas/fontespina2.jpg";
+import fontespina3 from "/src/assets/villas/fontespina3.jpg";
+import fontespina4 from "/src/assets/villas/fontespina4.jpg";
+import fontespina5 from "/src/assets/villas/fontespina5.jpg";
+
+import seasideSerenity1 from "/src/assets/villas/gallery-photo0.jpg";
+import seasideSerenity2 from "/src/assets/villas/gallery-photo1.jpg";
+import seasideSerenity3 from "/src/assets/villas/gallery-photo2.jpg";
+import seasideSerenity4 from "/src/assets/villas/gallery-photo3.jpg";
+import seasideSerenity5 from "/src/assets/villas/gallery-photo4.jpg";
+
+import saota1 from "/src/assets/villas/saota1.png";
+import saota2 from "/src/assets/villas/saota2.png";
+import saota3 from "/src/assets/villas/saota3.png";
+import saota4 from "/src/assets/villas/saota4.png";
+import saota5 from "/src/assets/villas/saota5.png";
+
+import metropolitan1 from "/src/assets/villas/metropolitan1.jpg";
+import metropolitan2 from "/src/assets/villas/metropolitan2.jpg";
+import metropolitan3 from "/src/assets/villas/metropolitan3.jpg";
+import metropolitan4 from "/src/assets/villas/metropolitan4.jpg";
+import metropolitan5 from "/src/assets/villas/metropolitan5.jpg";
+import metropolitan7 from "/src/assets/villas/metropolitan7.jpg";
+
+import rustic1 from "/src/assets/villas/rustic1.jpeg";
+import rustic2 from "/src/assets/villas/rustic2.jpeg";
+import rustic3 from "/src/assets/villas/rustic3.jpeg";
+import rustic4 from "/src/assets/villas/rustic4.jpeg";
+
 const propertiesInfo = [
   {
     id: 1,
@@ -112,6 +142,13 @@ const propertiesInfo = [
     type: "Villa",
     price: "$650,000",
     pricePerNight: 420,
+    gallery: [
+      seasideSerenity1,
+      seasideSerenity2,
+      seasideSerenity3,
+      seasideSerenity4,
+      seasideSerenity5,
+    ],
   },
   {
     id: 2,
@@ -126,6 +163,14 @@ const propertiesInfo = [
     type: "Apartment",
     price: "$550,000",
     pricePerNight: 350,
+    gallery: [
+      metropolitan1,
+      metropolitan2,
+      metropolitan3,
+      metropolitan4,
+      metropolitan5,
+      metropolitan7,
+    ],
   },
   {
     id: 3,
@@ -140,6 +185,7 @@ const propertiesInfo = [
     type: "Cottage",
     price: "$620,000",
     pricePerNight: 300,
+    gallery: [rustic1, rustic2, rustic3, rustic4],
   },
   {
     id: 4,
@@ -148,12 +194,13 @@ const propertiesInfo = [
     description:
       "A stunning 5-bedroom, 7-bathroom villa with pool and glass facade by SAOTA.",
     fullDescription:
-      "Experience luxury living in this stunning 5-bedroom, 7-bathroom villa designed by the renowned SAOTA. Boasting a sleek glass facade, this architectural masterpiece offers breathtaking views of the gulf, flooding the interior with natural light. The spacious open-plan layout seamlessly blends indoor and outdoor living, centered around a beautiful private pool perfect for relaxation and entertaining. Each bedroom features en-suite bathrooms with modern fixtures and elegant finishes, ensuring maximum comfort and privacy. High-end amenities, contemporary design, and exceptional craftsmanship make this villa the ultimate retreat for those seeking sophistication and tranquility.",
+      "Experience luxury living in this stunning 5-bedroom, 7-bathroom villa designed by the renowned SAOTA. Boasting a sleek glass facade, this architectural masterpiece offers breathtaking views of the gulf, flooding the interior with natural light. The spacious open-plan layout seamlessly blends indoor and outdoor living, centered around a beautiful private pool perfect for relaxation and entertaining. Each bedroom features en-suite bathrooms with modern fixtures and elegant finishes, ensuring maximum comfort and privacy. High-end amenities, contemporary design.",
     beds: 5,
     baths: 7,
     type: "Villa",
     price: "$760,000",
     pricePerNight: 550,
+    gallery: [fourthHouse, saota1, saota2, saota3, saota4, saota5],
   },
   {
     id: 5,
@@ -162,12 +209,13 @@ const propertiesInfo = [
     description:
       "On the hill of San Benedetto del Tronto with panoramic Riviera views.",
     fullDescription:
-      "PRIVATE STRUCTURE. Fontespina, a splendid villa surrounded by cypresses and olive trees, stands on the hill overlooking the Riviera delle Palme of San Benedetto del Tronto. Its location, three miles from the sea, allows guests to enjoy a peaceful holiday in the countryside yet with the beach just ten minutes away. The splendid view of the sea is visible from virtually every corner of the house and, especially, from the upper terrace and pool. A peaceful and elegant holiday, with all amenities, awaits you in this classical, top quality setting. NO SMOKERS HOUSE.FONTESPINA HAS BEEN SUBJECTED TO A CHECK-UP BY OUR TECHNICAL MANAGER, TO ENSURE THE CONSISTENCY OF THE DESCRIPTION, THE ACCESSORIES LISTED ON THE WEBSITE AND THEIR PRESENT STATE OF OPERATION/MAINTENANCE",
+      "PRIVATE STRUCTURE. Fontespina, a splendid villa surrounded by cypresses and olive trees, stands on the hill overlooking the Riviera delle Palme of San Benedetto del Tronto. Its location, three miles from the sea, allows guests to enjoy a peaceful holiday in the countryside yet with the beach just ten minutes away. The splendid view of the sea is visible from virtually every corner of the house and, especially, from the upper terrace and pool.",
     beds: 3,
     baths: 3,
     type: "Villa",
     price: "$220,000",
     pricePerNight: 180,
+    gallery: [fontespina1, fontespina2, fontespina3, fontespina4, fontespina5],
   },
   {
     id: 6,

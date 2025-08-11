@@ -5,7 +5,6 @@ const Counter = ({ target, suffix = "+", prefix = "", duration = 2000 }) => {
   const ref = useRef();
 
   useEffect(() => {
-    let start = 0;
     let startTime = null;
     const el = ref.current;
 
@@ -40,12 +39,14 @@ const Counter = ({ target, suffix = "+", prefix = "", duration = 2000 }) => {
 
 const OurJourney = () => {
   return (
-    <div>
-      <div className="flex bg-[#141414] text-white pt-20 pl-30 gap-60">
-        <div className="space-x-2">
-          <div className="max-w-140 pt-14">
-            <h1 className="text-6xl">Our Journey</h1>
-            <p className="pt-10 text-[#999999]">
+    <div className="bg-[#141414] text-white py-10 px-6 sm:px-10 lg:px-20">
+      <div className="flex flex-col lg:flex-row items-center gap-12">
+        <div className="flex-1">
+          <div className="max-w-2xl">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold">
+              Our Journey
+            </h1>
+            <p className="pt-6 text-[#999999] text-sm sm:text-base">
               Our story is one of continuous growth and evolution. We started as
               a small team with big dreams, determined to create a real estate
               platform that transcended the ordinary. Over the years, we've
@@ -53,30 +54,43 @@ const OurJourney = () => {
               trust of countless clients.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
             <div className="bg-[#1A1A1A] p-6 rounded-xl text-center">
               <h4 className="text-2xl font-bold">
                 <Counter target={350} />
               </h4>
-              <p className="text-gray-400 mt-2">Happy Customers</p>
+              <p className="text-gray-400 mt-2 text-sm sm:text-base">
+                Happy Customers
+              </p>
             </div>
             <div className="bg-[#1A1A1A] p-6 rounded-xl text-center">
               <h4 className="text-2xl font-bold">
                 <Counter target={30} suffix="k+" />
               </h4>
-              <p className="text-gray-400 mt-2">Properties For Clients</p>
+              <p className="text-gray-400 mt-2 text-sm sm:text-base">
+                Properties For Clients
+              </p>
             </div>
             <div className="bg-[#1A1A1A] p-6 rounded-xl text-center">
               <h4 className="text-2xl font-bold">
                 <Counter target={16} />
               </h4>
-              <p className="text-gray-400 mt-2">Years of Experience</p>
+              <p className="text-gray-400 mt-2 text-sm sm:text-base">
+                Years of Experience
+              </p>
             </div>
           </div>
         </div>
-        <img className="" src={subContainer} alt="" />
+        <div className="flex-1 flex justify-center">
+          <img
+            className="max-w-full h-auto rounded-xl"
+            src={subContainer}
+            alt="Our Journey"
+          />
+        </div>
       </div>
     </div>
   );
 };
+
 export default OurJourney;

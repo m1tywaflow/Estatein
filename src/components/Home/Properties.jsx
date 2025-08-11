@@ -100,18 +100,20 @@ export default function Properties() {
   return (
     <section className="bg-[#0a0a0a] text-white py-16 px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between mb-8 items-center">
+        <div className="flex flex-col sm:flex-row justify-between mb-8 items-start sm:items-center gap-4">
           <div>
-            <h1 className="text-3xl font-bold mb-2">Featured Properties</h1>
-            <p className="text-gray-400 text-sm max-w-xl">
+            <h1 className="text-2xl sm:text-3xl font-bold mb-2">
+              Featured Properties
+            </h1>
+            <p className="text-gray-400 text-sm sm:text-base max-w-xl">
               Explore our handpicked selection of featured properties. Each
               listing offers a glimpse into exceptional homes and investments
               available through Estatein. Click "View Details" for more
               information.
             </p>
           </div>
-          <Link to="/properties">
-            <button className="border border-gray-600 text-sm px-4 py-2 rounded hover:bg-white hover:text-black transition cursor-pointer">
+          <Link to="/properties" className="w-full sm:w-auto">
+            <button className="w-full sm:w-auto border border-gray-600 text-sm px-4 py-2 rounded hover:bg-white hover:text-black transition cursor-pointer">
               View All Properties
             </button>
           </Link>

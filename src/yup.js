@@ -1,5 +1,5 @@
-import * as yup from 'yup';
-import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from "yup";
+import { yupResolver } from "@hookform/resolvers/yup";
 
 const phoneRegex = /(?=.*\+[0-9]{3}\s?[0-9]{2}\s?[0-9]{3}\s?[0-9]{4,5}$)/;
 
@@ -8,61 +8,64 @@ export const validationSchema = yup
     username: yup
       .string()
       .trim()
-      .required('Missing name'),
+      .required("Missing name")
+      .min(3, "Username must be at least 3 characters")
+      .max(20, "Username must be at most 20 characters"),
 
     age: yup
       .number()
       .transform((value, originalValue) => {
-
-        return originalValue === '' ? undefined : value;
+        return originalValue === "" ? undefined : value;
       })
-      .typeError('Age must be a number')
-      .required('Missing age')
-      .positive('Age must be a positive number')
-      .integer('Age must be an integer')
-      .min(18, 'Your age must be minimum 18'),
+      .typeError("Age must be a number")
+      .required("Missing age")
+      .positive("Age must be a positive number")
+      .integer("Age must be an integer")
+      .min(18, "Your age must be minimum 18")
+      .max(99, "Your age must be maximum 99"),
 
     email: yup
       .string()
       .trim()
-      .required('Missing email')
-      .email('Invalid email format'),
+      .required("Missing email")
+      .email("Invalid email format"),
 
     phone: yup
       .string()
       .trim()
-      .required('Missing phone')
-      .matches(phoneRegex, 'Phone number must be in correct format - +380 XX XXX XX XX'),
+      .required("Missing phone")
+      .matches(
+        phoneRegex,
+        "Phone number must be in correct format - +380 XX XXX XX XX"
+      ),
 
     select: yup
       .string()
-      .required('Select any option')
-      .oneOf(['option_1', 'option_2', 'option_3'], 'Select any option'),
+      .required("Select any option")
+      .oneOf(["option_1", "option_2", "option_3"], "Select any option"),
 
     password: yup
       .string()
       .trim()
-      .required('Missing password')
-      .min(4, 'Your password must be minimum 4'),
+      .required("Missing password")
+      .min(4, "Your password must be minimum 4"),
 
     confirmPassword: yup
       .string()
       .trim()
-      .required('Missing confirm password')
-      .oneOf([yup.ref('password')], 'Passwords must match'),
+      .required("Missing confirm password")
+      .oneOf([yup.ref("password")], "Passwords must match"),
 
-    radioType: yup
-      .string()
-      .required('Radio Type is required'),
+    radioType: yup.string().required("Radio Type is required"),
 
     rememberMe: yup
       .boolean()
       .required()
-      .oneOf([true], 'Remember me is required'),
+      .oneOf([true], "Remember me is required"),
   })
   .required();
 
 export const formOptions = {
   resolver: yupResolver(validationSchema),
-  mode: 'onTouched',
+  mode: "onTouched",
 };

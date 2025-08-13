@@ -81,9 +81,8 @@ export default function CardSwitcher() {
       : cardsSet3;
 
   return (
-    <div className="bg-black text-white py-10 px-4">
-      {/* Табы */}
-      <div className="flex justify-center space-x-4 mb-8">
+    <div className=" text-white py-10 px-4">
+      <div className="flex justify-center mb-8 flex-wrap md:flex-nowrap md:space-x-4 gap-3 md:gap-0">
         <button
           onClick={() => setActiveTab("set1")}
           className={`px-4 py-2 rounded-full border transition cursor-pointer ${

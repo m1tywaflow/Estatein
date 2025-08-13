@@ -4,7 +4,7 @@ import ValuationFactorsChart from "../components/Valuation/ValuationFactorsChart
 import ValuationTrendChart from "../components/Valuation/ValuationTrendChart";
 const ValuationMastery = () => {
   return (
-    <section className="bg-gray-600  px-6 py-16 lg:px-24">
+    <section className="bg-gray-900  px-6 py-16 lg:px-24">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold mb-6 text-yellow-600">
           Valuation Mastery

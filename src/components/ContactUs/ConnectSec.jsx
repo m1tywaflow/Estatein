@@ -3,24 +3,27 @@ import { YupPreview } from "./YupPreview";
 
 export default function ConnectSec() {
   return (
-    <div className="relative bg-black overflow-hidden px-6 md:px-20 py-20">
+    <div className="relative bg-black overflow-hidden px-4 sm:px-6 md:px-20 py-12 md:py-20">
       {/* pisma */}
       <div className="absolute inset-0 pointer-events-none">
         {/* left side */}
-        <EnvelopeIcon className="absolute top-4 left-4 w-16 h-16 text-white rotate-0" />
-        <EnvelopeIcon className="absolute top-28 left-12 w-24 h-24 text-white rotate-12" />
-        <EnvelopeIcon className="absolute top-56 left-2 w-20 h-20 text-white -rotate-6" />
+        <EnvelopeIcon className="absolute top-4 left-2 sm:left-4 w-10 sm:w-16 h-10 sm:h-16 text-white rotate-0" />
+        <EnvelopeIcon className="absolute top-20 sm:top-28 left-6 sm:left-12 w-14 sm:w-24 h-14 sm:h-24 text-white rotate-12" />
+        <EnvelopeIcon className="hidden sm:block absolute top-44 sm:top-56 left-1 sm:left-2 w-12 sm:w-20 h-12 sm:h-20 text-white -rotate-6" />
 
         {/* right side */}
-        <EnvelopeIcon className="absolute top-8 right-4 w-20 h-20 text-white rotate-12" />
-        <EnvelopeIcon className="absolute top-48 right-16 w-16 h-16 text-white rotate-8" />
+        <EnvelopeIcon className="absolute top-6 sm:top-8 right-2 sm:right-4 w-12 sm:w-20 h-12 sm:h-20 text-white rotate-12" />
+        <EnvelopeIcon className="hidden sm:block absolute top-40 sm:top-48 right-6 sm:right-16 w-10 sm:w-16 h-10 sm:h-16 text-white rotate-8" />
 
         {/* center+right */}
-        <EnvelopeIcon className="absolute bottom-200 right-24 w-20 h-20 text-white rotate-6" />
+        <EnvelopeIcon className="hidden sm:block absolute bottom-48 sm:bottom-[200px] right-8 sm:right-24 w-12 sm:w-20 h-12 sm:h-20 text-white rotate-6" />
       </div>
-      <div className="px-20 py-20 text-center relative z-10">
-        <h1 className="text-5xl text-white mb-4">Let's Connect</h1>
-        <p className="text-sm text-gray-400 max-w-5xl mx-auto pt-4">
+
+      <div className="px-4 sm:px-6 md:px-20 py-12 md:py-20 text-center relative z-10">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl text-white mb-4">
+          Let's Connect
+        </h1>
+        <p className="text-xs sm:text-sm md:text-base text-gray-400 max-w-5xl mx-auto pt-4">
           We're excited to connect with you and learn more about your real
           estate goals. Use the form below to get in touch with Estatein.
           Whether you're a prospective client, partner, or simply curious about
@@ -37,8 +40,8 @@ export default function ConnectSec() {
                      blur-md opacity-80 transition-all duration-500 group-hover:blur-lg group-hover:opacity-100"
         ></div>
 
-        {/* main container7 */}
-        <div className="relative rounded-2xl p-6 md:p-10 bg-black border border-gray-800 z-10">
+        {/* main container */}
+        <div className="relative rounded-2xl p-4 sm:p-6 md:p-10 bg-black border border-gray-800 z-10">
           <YupPreview />
         </div>
       </div>

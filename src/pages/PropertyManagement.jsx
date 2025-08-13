@@ -4,9 +4,9 @@ import ValuationTrendChart from "/src/components/Valuation/ValuationTrendChart";
 
 const PropertyManagement = () => {
   return (
-    <section className="bg-white text-gray-900 px-6 py-16 lg:px-24">
+    <section className="bg-black text-white px-6 py-16 lg:px-24">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold mb-6 text-gray-900">
+        <h2 className="text-4xl font-bold mb-6 text-white">
           Property Management
         </h2>
         <p className="text-lg text-gray-700 mb-12 leading-relaxed">
@@ -58,10 +58,8 @@ const PropertyManagement = () => {
             </p>
           </div>
         </div>
-
-        {/* Section: Why Estatein */}
         <div className="mt-20 text-center">
-          <h4 className="text-2xl font-bold mb-4">Why Estatein Management?</h4>
+          <h4 className="text-2xl font-bold mb-4 text-white">Why Estatein Management?</h4>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
             Whether you own a single luxury villa or a global real estate
             portfolio, our team ensures everything runs smoothly — profitably
@@ -69,25 +67,25 @@ const PropertyManagement = () => {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-left">
             <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
-              <h5 className="text-lg font-semibold mb-2">Maximized ROI</h5>
+              <h5 className="text-lg font-semibold mb-2 text-black">Maximized ROI</h5>
               <p className="text-gray-600 text-sm">
                 Strategic pricing, minimal vacancy, and proactive maintenance.
               </p>
             </div>
             <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
-              <h5 className="text-lg font-semibold mb-2">Dedicated Managers</h5>
+              <h5 className="text-lg font-semibold mb-2 text-black">Dedicated Managers</h5>
               <p className="text-gray-600 text-sm">
                 Personal property manager assigned to every estate.
               </p>
             </div>
             <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
-              <h5 className="text-lg font-semibold mb-2">Global Reach</h5>
+              <h5 className="text-lg font-semibold mb-2 text-black">Global Reach</h5>
               <p className="text-gray-600 text-sm">
                 Multi-country support for cross-border ownership.
               </p>
             </div>
             <div className="bg-gray-50 p-6 rounded-xl shadow-sm">
-              <h5 className="text-lg font-semibold mb-2">Peace of Mind</h5>
+              <h5 className="text-lg font-semibold mb-2 text-black">Peace of Mind</h5>
               <p className="text-gray-600 text-sm">
                 You relax. We handle everything.
               </p>
